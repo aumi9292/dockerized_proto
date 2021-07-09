@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  kafka_consumer:
+    image: aumi9292/kafka_consumer:latest
+    environment:
+      CLIENT: NodeJSClient
+      BROKERS: 143.198.113.3:9093
+      FROM_BEGINNING: "true"
+      POST_URL: http://api_proxy:3000/topics
+      CONSUMER_GROUP: test_consumer
+      TOPIC: weather
+    depends_on:
+      - api_proxy
+
+  api_proxy:
+    image: aumi9292/api_proxy:latest
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DB: mongodb+srv://gomates2105:WmLxzzf2@cluster0.tgzef.mongodb.net/kafka_test?retryWrites=true&w=majority

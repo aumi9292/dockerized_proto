@@ -1,0 +1,24 @@
+{
+  "name": "kafka-testing",
+  "version": "1.0.0",
+  "description": "testing kafka consumer and producer",
+  "main": "consumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goMates/kafka-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goMates/kafka-testing/issues"
+  },
+  "homepage": "https://github.com/goMates/kafka-testing#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "kafkajs": "^1.15.0"
+  }
+}

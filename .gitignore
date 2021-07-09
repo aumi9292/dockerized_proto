@@ -1,0 +1,7 @@
+/api_proxy/node_modules
+/api_proxy/data_persistence/node_modules
+/api_proxy/.env
+/kafka_consumer/node_modules
+/kafka_consumer/.env
+/kafka_producer/node_modules
+/kafka_producer/.env
