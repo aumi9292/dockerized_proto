@@ -15,19 +15,18 @@ const consumer = kafka.consumer({ groupId: CONSUMER_GROUP});
 
 const postRecord = (data) => {
   // const record = {data, deserializedValue: String(data.message.value)};
-
   axios.post(`${POST_URL}/${TOPIC}`, {
     key: data.message.key.toString(),
     value: data.message.value.toString(),
     timestamp: new Date(Number(data.message.timestamp)),
   })
-  .catch(error => console.log(error));
+    .catch(error => console.log(error));
 };
 
 async function startConsumer() {
   await consumer.connect();
   await consumer.subscribe({ topic: TOPIC, fromBeginning: Boolean(FROM_BEGINNING) });
-  
+
   await consumer.run({
     eachMessage: (data) => postRecord(data),
   });
