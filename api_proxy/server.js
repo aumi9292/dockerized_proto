@@ -1,10 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-const app = express();
-
-const {connectToMongo, persistInMongo} = require('./data_persistence/mongoDB');
 require('dotenv').config();
-
+const app = express();
+const {connectToMongo, persistInMongo} = require('./data_persistence/mongoDB');
 
 app.use(cors());
 app.use(express.json());
@@ -13,7 +11,8 @@ app.set('view engine', 'ejs'); // for templating
 
 connectToMongo(process.env.DB);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 const HEADERS = {
   'Content-Type': 'text/event-stream',
   'Connection': 'keep-alive',

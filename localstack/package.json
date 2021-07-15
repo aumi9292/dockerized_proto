@@ -1,0 +1,23 @@
+{
+  "name": "localstack",
+  "version": "0.1.0",
+  "bin": {
+    "localstack": "bin/localstack.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.113.0",
+    "aws-cdk": "1.113.0",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.113.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.113.0",
+    "@aws-cdk/core": "1.113.0",
+    "aws-cdk-local": "^1.65.6"
+  }
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";const s=new class{Fjord}({fjordOpts:{url:"http://localhost:3000",topic:"weather",type:"sse"}});console.log(s),s.source.onmessage=s=>{const o=JSON.parse(s.data);console.log(o)}})();
