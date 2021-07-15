@@ -1,0 +1,889 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsCdkStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AwsCdkStack/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:355:25)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1SubnetF6608456",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableC46AB2F4",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableAssociation2ECEE1CB",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1DefaultRoute95FDF9EB",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:735:23)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:387:32)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1EIP096967CB",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1NATGatewayAD3400C1",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2Subnet492B6BFB",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTable1DF17386",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTableAssociation227DE78D",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PublicSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:844:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2DefaultRoute052936F6",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:735:23)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:387:32)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2EIP8CCBA239",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2NATGateway91BFBEC9",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:77:33)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1Subnet5057CF7E",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTable8819E6E2",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTableAssociation56D38C7E",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1DefaultRouteA8CDE2FA",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:92:16)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:86:18)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2Subnet0040C983",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:679:24)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableCEDCEECE",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:695:23)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableAssociation86A610DA",
+            "trace": [
+              "new Subnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:700:9)",
+              "new PrivateSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:884:9)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:561:32)",
+              "Vpc.createSubnets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:557:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:376:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2DefaultRoute9CE96294",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:92:16)",
+              "NatGatewayProvider.configureNat (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.js:86:18)",
+              "Vpc.createNatGateways (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:535:18)",
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:393:22)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:380:25)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:383:25)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:17:17)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCluster4C1BA579",
+            "trace": [
+              "new Cluster (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/cluster.js:79:25)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:21:21)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBDE830E97",
+            "trace": [
+              "new BaseLoadBalancer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:28:9)",
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBSecurityGroup6FBF16F1",
+            "trace": [
+              "new SecurityGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "new ApplicationLoadBalancer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:34:56)",
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:55:89)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LB/SecurityGroup/to AwsCdkStackMyFargateServiceSecurityGroup52E6987D:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBSecurityGrouptoAwsCdkStackMyFargateServiceSecurityGroup52E6987D802142210A",
+            "trace": [
+              "SecurityGroup.addEgressRule (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:70:13)",
+              "SecurityGroup.addEgressRule (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:345:19)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:81:31",
+              "ReactiveList.forEachAndForever (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:80:51",
+              "ReactiveList.forEachAndForever (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowTo (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:79:30)",
+              "Connections.allowFrom (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:112:31)",
+              "ApplicationListener.registerConnectable (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBPublicListener61A1042F",
+            "trace": [
+              "new BaseListener (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:74:26)",
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:67:38)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLBPublicListenerECSGroup4A3EDF05",
+            "trace": [
+              "new TargetGroupBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:72:42)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceLoadBalancerDNS704F6391",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:132:9)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceServiceURL4CF8398A",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:133:9)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:22:9)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefTaskRole62C7D397",
+            "trace": [
+              "new Role (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new TaskDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:97:43)",
+              "new FargateTaskDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDef5DA17B39",
+            "trace": [
+              "new TaskDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:103:25)",
+              "new FargateTaskDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:32:35)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefwebLogGroup4A6C44E8",
+            "trace": [
+              "new LogGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-logs/lib/log-group.js:165:26)",
+              "AwsLogDriver.bind (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:45:48)",
+              "new ContainerDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefExecutionRoleD6305504",
+            "trace": [
+              "new Role (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "FargateTaskDefinition.obtainExecutionRole (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:336:35)",
+              "AwsLogDriver.bind (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:69)",
+              "new ContainerDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceTaskDefExecutionRoleDefaultPolicyEC22B20F",
+            "trace": [
+              "new Policy (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "LogGroup.grant (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-logs/lib/log-group.js:96:26)",
+              "LogGroup.grantWrite (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-logs/lib/log-group.js:88:21)",
+              "AwsLogDriver.bind (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:48:23)",
+              "new ContainerDefinition (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:261:16)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:45:51)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceF490C034",
+            "trace": [
+              "new BaseService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:142:25)",
+              "new FargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:34:9)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceSecurityGroup7016792A",
+            "trace": [
+              "new SecurityGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:213:30)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:531:31)",
+              "new FargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:52:14)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:60:24)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/MyFargateService/Service/SecurityGroup/from AwsCdkStackMyFargateServiceLBSecurityGroup11A9E792:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFargateServiceSecurityGroupfromAwsCdkStackMyFargateServiceLBSecurityGroup11A9E79280F86FFEFF",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:55:13)",
+              "SecurityGroup.addIngressRule (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:305:19)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:31",
+              "ReactiveList.forEachAndForever (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:105:51",
+              "ReactiveList.forEachAndForever (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowFrom (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ec2/lib/connections.js:104:30)",
+              "ApplicationListener.registerConnectable (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:323:29)",
+              "FargateService.attachToApplicationTargetGroup (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:284:47)",
+              "ApplicationTargetGroup.addTarget (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:163:26)",
+              "new ApplicationLoadBalancedFargateService (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:78:14)",
+              "new AwsCdkStack (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/lib/aws_cdk-stack.js:26:5)",
+              "Object.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/bin/aws_cdk.js:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsCdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/app.js:51:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ],
+        "/AwsCdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/Users/austinmiller/Documents/launch_school/Capstone/project/dockerized/aws_cdk/node_modules/@aws-cdk/core/lib/app.js:51:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AwsCdkStack"
+    }
+  }
+}
